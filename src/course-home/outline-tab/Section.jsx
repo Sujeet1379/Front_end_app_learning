@@ -7,6 +7,7 @@ import { faCheckCircle as farCheckCircle } from '@fortawesome/free-regular-svg-i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import SequenceLink from './SequenceLink';
+import ResourceLink from './ResourceLink';
 import { useModel } from '../../generic/model-store';
 
 import genericMessages from '../../generic/messages';
@@ -117,7 +118,9 @@ function Section({
               sequence={sequences[sequenceId]}
               first={index === 0}
             />
-          ))}
+          ))
+          }
+          <ResourceLink courseId={courseId}/>
         </ol>
       </Collapsible>
     </li>

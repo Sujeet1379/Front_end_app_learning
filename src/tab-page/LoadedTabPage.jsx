@@ -43,6 +43,8 @@ function LoadedTabPage({
   const streakDiscountCouponEnabled = celebrations && celebrations.streakDiscountEnabled && verifiedMode;
   const [isStreakCelebrationOpen,, closeStreakCelebration] = useToggle(streakLengthToCelebrate);
 
+  // console.log({enrollmentAlert});
+
   return (
     <>
       <ProductTours
