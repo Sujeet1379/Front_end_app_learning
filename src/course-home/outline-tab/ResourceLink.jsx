@@ -26,6 +26,7 @@ function ResourceLink(props) {
     })
       .then((data) => data.json())
       .then((response) => {
+        console.log(response)
         var data = response["data"];
         var items = data.filter((e) => {
           if (
